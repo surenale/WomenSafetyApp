@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".EditActivity">
+
+        <!-- for account image -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/account" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- for first name -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/person" />
+
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+        <!-- for last name -->
+
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15sp"
+            android:hint="Last Name"
+            android:inputType="text" />
+
+
+        <!-- for phone -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_phone"
+
+                />
+
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <!-- checkbox for message -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/message" />
+
+
+            <TextView
+                android:id="@+id/sendMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Message Alert"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/priority" />
+
+            <TextView
+                android:id="@+id/priorityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15sp"
+                android:text="Priority"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SAVE"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

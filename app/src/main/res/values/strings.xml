@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">WomenSafety</string>
+
+    <!--    Contact Management Information-->
+
+    <string-array name="names">
+        <item>Balman Rawat</item>
+        <item>Bipin Ale</item>
+        <item>Raju Rai</item>
+        <item>Biki Doner</item>
+        <item>Kaushar Khan</item>
+        <item>Chandra Rawat</item>
+        <item>Suren Ale</item>
+    </string-array>
+
+    <string-array name="pnums">
+        <item>9840052692</item>
+        <item>9840060679</item>
+        <item>9840069259</item>
+        <item>9867845321</item>
+        <item>9868785321</item>
+        <item>9837387487</item>
+        <item>9868114024</item>
+    </string-array>
+
+
+    <string-array name="priorities">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="smFlag">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+
+    <!--    Below are the information for the HELP DESK -->
+
+    <string name="app_description">
+        This is app to ensure the emergency need of any women specially in developing countries.
+    </string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="request_phone_call">Please allow phone permission to call</string>
+
+</resources>
